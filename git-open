@@ -178,8 +178,6 @@ else
   providerBranchRef="/tree/$branch"
 fi
 
-echo $pathargs[@]
-echo ${pathargs[${#pathargs[@]}-2]}
 if [[ "$domain" == 'bitbucket.org' ]]; then
   # Bitbucket, see https://github.com/paulirish/git-open/issues/80 for why ?at is needed.
   providerBranchRef="/src?at=$branch"
